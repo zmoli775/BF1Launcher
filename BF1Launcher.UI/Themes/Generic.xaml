@@ -1,0 +1,17 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+
+    <ResourceDictionary.MergedDictionaries>
+
+        <ResourceDictionary Source="/BF1Launcher.UI;component/Styles/Global.xaml" />
+
+        <ResourceDictionary Source="/BF1Launcher.UI;component/Styles/ScrollViewer.xaml" />
+
+        <ResourceDictionary Source="/BF1Launcher.UI;component/Styles/Label.xaml" />
+        <ResourceDictionary Source="/BF1Launcher.UI;component/Styles/Button.xaml" />
+        <ResourceDictionary Source="/BF1Launcher.UI;component/Styles/TextBox.xaml" />
+
+        <ResourceDictionary Source="/BF1Launcher.UI;component/Styles/TabControl.xaml" />
+
+    </ResourceDictionary.MergedDictionaries>
+
+</ResourceDictionary>

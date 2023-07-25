@@ -1,0 +1,85 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>net6.0-windows</TargetFramework>
+        <Nullable>disable</Nullable>
+        <UseWPF>true</UseWPF>
+        <Platforms>x64</Platforms>
+        <PlatformTarget>x64</PlatformTarget>
+        <StartupObject>BF1Launcher.App</StartupObject>
+        <ApplicationIcon>Assets\Icons\Favicon.ico</ApplicationIcon>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
+        <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+        <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+        <GenerateAssemblyVersionAttribute>false</GenerateAssemblyVersionAttribute>
+        <GenerateAssemblyFileVersionAttribute>false</GenerateAssemblyFileVersionAttribute>
+        <GenerateAssemblyInformationalVersionAttribute>false</GenerateAssemblyInformationalVersionAttribute>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+        <DebugType>full</DebugType>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+        <DebugType>full</DebugType>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <None Remove="Assets\Icons\Favicon.ico" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\BF1Launcher.UI\BF1Launcher.UI.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <Resource Include="Assets\Icons\Cursor.cur" />
+        <Resource Include="Assets\Icons\Favicon.ico" />
+        <Resource Include="Assets\Images\BGLoop\MP_Ridge_BGLoop.jpg" />
+        <Resource Include="Assets\Images\icons8-folder-48.png" />
+        <Resource Include="Assets\Images\icons8-hdd-48.png" />
+        <Resource Include="Assets\Images\logo_pc-795c9952.png" />
+        <Resource Include="Assets\Images\origin_icon.png" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Update="AppData\Backup\bf1.exe">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+        <None Update="AppData\Config\Config.ini">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+        <None Update="AppData\Origin\config.txt">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+        <None Update="AppData\Origin\EADesktop.exe">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+        <None Update="AppData\Patch\bf1.exe">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+        <None Update="AppData\Patch\dinput8.dll">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+        <None Update="AppData\Patch\dinput8_org.dll">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+        <None Update="AppData\Patch\JS\dinput8.dll">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+        <None Update="AppData\Patch\JS\dinput8_org.dll">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+        <None Update="AppData\Patch\originemu.dll">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+        <None Update="AppData\Tools\EA_Game_RegFix.exe">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+    </ItemGroup>
+
+</Project>

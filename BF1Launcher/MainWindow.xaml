@@ -1,0 +1,42 @@
+﻿<Window
+    x:Class="BF1Launcher.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:views="clr-namespace:BF1Launcher.Views"
+    x:Name="Window_Main"
+    Title="Battlefield™ 1 启动器"
+    Width="850"
+    Height="550"
+    Closing="Window_Main_Closing"
+    FontFamily="{StaticResource FontFamily_Default}"
+    FontSize="14"
+    Loaded="Window_Main_Loaded"
+    ResizeMode="CanMinimize"
+    WindowStartupLocation="CenterScreen"
+    mc:Ignorable="d">
+
+    <Window.Background>
+        <ImageBrush
+            ImageSource="/Assets/Images/BGLoop/MP_Ridge_BGLoop.jpg"
+            RenderOptions.BitmapScalingMode="HighQuality"
+            Stretch="UniformToFill" />
+    </Window.Background>
+
+    <TabControl Margin="5">
+        <TabItem Header="免Origin启动">
+            <views:HomeView />
+        </TabItem>
+        <TabItem Header="常用工具箱">
+            <views:ToolsView />
+        </TabItem>
+        <TabItem Header="GameId加入游戏">
+            <views:JoinView />
+        </TabItem>
+        <TabItem Header="关于软件">
+            <views:AboutView />
+        </TabItem>
+    </TabControl>
+
+</Window>
