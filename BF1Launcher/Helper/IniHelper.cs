@@ -6,10 +6,10 @@ public static class IniHelper
 {
     private const string IniPath = CoreUtil.Config_Config_ini;
 
-    [DllImport("kernel32.dll", CharSet = CharSet.Unicode)]
+    [DllImport("kernel32.dll")]
     private static extern int GetPrivateProfileString(string section, string key, string def, byte[] retVal, int size, string filePath);
 
-    [DllImport("kernel32.dll", CharSet = CharSet.Unicode)]
+    [DllImport("kernel32.dll")]
     private static extern long WritePrivateProfileString(string section, byte[] key, byte[] val, string filePath);
 
     /// <summary>

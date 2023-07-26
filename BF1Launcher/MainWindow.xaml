@@ -10,6 +10,7 @@
     Width="850"
     Height="550"
     Closing="Window_Main_Closing"
+    DataContext="{Binding RelativeSource={RelativeSource Mode=Self}}"
     FontFamily="{StaticResource FontFamily_Default}"
     FontSize="14"
     Loaded="Window_Main_Loaded"
@@ -25,11 +26,11 @@
     </Window.Background>
 
     <TabControl Margin="5">
-        <TabItem Header="免Origin启动">
-            <views:HomeView />
+        <TabItem Header="准备工作">
+            <views:ReadyView />
         </TabItem>
-        <TabItem Header="常用工具箱">
-            <views:ToolsView />
+        <TabItem Header="免Origin启动">
+            <views:PlayView />
         </TabItem>
         <TabItem Header="GameId加入游戏">
             <views:JoinView />

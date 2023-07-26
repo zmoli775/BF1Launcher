@@ -10,6 +10,7 @@
         <ResourceDictionary Source="/BF1Launcher.UI;component/Styles/Button.xaml" />
         <ResourceDictionary Source="/BF1Launcher.UI;component/Styles/TextBox.xaml" />
 
+        <ResourceDictionary Source="/BF1Launcher.UI;component/Styles/ListBox.xaml" />
         <ResourceDictionary Source="/BF1Launcher.UI;component/Styles/TabControl.xaml" />
 
     </ResourceDictionary.MergedDictionaries>

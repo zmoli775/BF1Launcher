@@ -6,7 +6,7 @@
         <Setter Property="Foreground" Value="White" />
         <Style.Triggers>
             <Trigger Property="IsMouseOver" Value="True">
-                <Setter Property="Foreground" Value="GhostWhite" />
+                <Setter Property="Foreground" Value="#3F85FF" />
             </Trigger>
         </Style.Triggers>
     </Style>

@@ -4,49 +4,21 @@ using BF1Launcher.Helper;
 namespace BF1Launcher.Views;
 
 /// <summary>
-/// HomeView.xaml 的交互逻辑
+/// PlayView.xaml 的交互逻辑
 /// </summary>
-public partial class HomeView : UserControl
+public partial class PlayView : UserControl
 {
-    public HomeView()
+    public PlayView()
     {
         InitializeComponent();
         MainWindow.WindowClosingEvent += MainWindow_WindowClosingEvent;
 
-        TextBox_BF1GameDir.Text = IniHelper.ReadValue("Config", "BF1GameDir");
         TextBox_BF1RunArgs.Text = IniHelper.ReadValue("Config", "BF1RunArgs");
-
-        CoreUtil.BF1_Game_Dir = TextBox_BF1GameDir.Text.Trim();
     }
 
     private void MainWindow_WindowClosingEvent()
     {
-        IniHelper.WriteValue("Config", "BF1GameDir", TextBox_BF1GameDir.Text.Trim());
         IniHelper.WriteValue("Config", "BF1RunArgs", TextBox_BF1RunArgs.Text.Trim());
-    }
-
-    /// <summary>
-    /// 选择战地1游戏所在文件夹
-    /// </summary>
-    /// <param name="sender"></param>
-    /// <param name="e"></param>
-    private void Button_SelectBF1GameDir_Click(object sender, RoutedEventArgs e)
-    {
-        var fileDialog = new OpenFileDialog
-        {
-            Title = "选择战地1游戏所在文件夹",
-            RestoreDirectory = true,
-            Multiselect = false,
-            Filter = "可以执行程序|*.exe",
-            FileName = "bf1.exe"
-        };
-
-        if (fileDialog.ShowDialog() == true)
-        {
-            TextBox_BF1GameDir.Text = Path.GetDirectoryName(fileDialog.FileName);
-
-            CoreUtil.BF1_Game_Dir = TextBox_BF1GameDir.Text.Trim();
-        }
     }
 
     /// <summary>

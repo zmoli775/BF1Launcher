@@ -1,0 +1,97 @@
+﻿<UserControl
+    x:Class="BF1Launcher.Views.ReadyView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    d:Background="#000"
+    d:DesignHeight="450"
+    d:DesignWidth="800"
+    DataContext="{Binding RelativeSource={RelativeSource Mode=Self}}"
+    mc:Ignorable="d">
+
+    <StackPanel>
+        <Label Content="游戏目录" />
+        <DockPanel>
+            <Button
+                x:Name="Button_SelectBF1GameDir"
+                Margin="0,5,5,5"
+                Click="Button_SelectBF1GameDir_Click"
+                DockPanel.Dock="Right">
+                <StackPanel Orientation="Horizontal">
+                    <Image
+                        Height="20"
+                        Margin="0,0,5,0"
+                        Source="/Assets/Images/icons8-folder-48.png" />
+                    <TextBlock VerticalAlignment="Center" Text="选择" />
+                </StackPanel>
+            </Button>
+            <TextBox
+                x:Name="TextBox_BF1GameDir"
+                VerticalContentAlignment="Center"
+                ContextMenu="{x:Null}"
+                IsReadOnly="True"
+                Text="D:\Origin Games\Battlefield 1"
+                TextWrapping="NoWrap"
+                ToolTip="战地1游戏所在目录" />
+        </DockPanel>
+        <!--  ////////////////  -->
+        <Label Content="补丁工具" />
+        <WrapPanel>
+            <Button
+                x:Name="Button_UseWithoutOriginPath"
+                Margin="5,5,0,5"
+                Click="Button_UseWithoutOriginPath_Click">
+                <StackPanel>
+                    <Image
+                        Width="32"
+                        Margin="0,0,0,5"
+                        Source="/Assets/Images/icons8-hdd-48.png" />
+                    <TextBlock VerticalAlignment="Center" Text="使用战地1免Origin补丁" />
+                </StackPanel>
+            </Button>
+            <Button
+                x:Name="Button_UseBackupBF1MainApp"
+                Margin="5,5,0,5"
+                Click="Button_UseBackupBF1MainApp_Click">
+                <StackPanel>
+                    <Image
+                        Width="32"
+                        Margin="0,0,0,5"
+                        Source="/Assets/Images/icons8-hdd-48.png" />
+                    <TextBlock VerticalAlignment="Center" Text="恢复战地1原版文件" />
+                </StackPanel>
+            </Button>
+        </WrapPanel>
+        <!--  ////////////////  -->
+        <Label Content="常用功能" />
+        <WrapPanel>
+            <Button
+                x:Name="Button_OpenAppDataDir"
+                Margin="5,5,0,5"
+                Click="Button_OpenAppDataDir_Click"
+                Content="打开数据目录" />
+            <Button
+                x:Name="Button_OpenBF1GameDir"
+                Margin="5,5,0,5"
+                Click="Button_OpenBF1GameDir_Click"
+                Content="打开战地1游戏目录" />
+            <Button
+                x:Name="Button_OpenBF1DocDir"
+                Margin="5,5,0,5"
+                Click="Button_OpenBF1DocDir_Click"
+                Content="打开战地1文档目录" />
+            <Button
+                x:Name="Button_EditOriginEmuConfig"
+                Margin="5,5,0,5"
+                Click="Button_EditOriginEmuConfig_Click"
+                Content="编辑Origin模拟器Cookies文件" />
+            <Button
+                x:Name="Button_UseBF1RegeditFix"
+                Margin="5,0,0,5"
+                Click="Button_UseBF1RegeditFix_Click"
+                Content="运行战地1繁体中文注册表修复工具" />
+        </WrapPanel>
+    </StackPanel>
+
+</UserControl>

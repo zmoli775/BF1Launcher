@@ -5,7 +5,9 @@ VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BF1Launcher", "BF1Launcher\BF1Launcher.csproj", "{AD485BF0-3FE9-4560-990A-A24BB7602EEC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BF1Launcher.UI", "BF1Launcher.UI\BF1Launcher.UI.csproj", "{6F3E85EA-272A-4284-A7C6-435D52B17999}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BF1Launcher.UI", "BF1Launcher.UI\BF1Launcher.UI.csproj", "{6F3E85EA-272A-4284-A7C6-435D52B17999}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BF1Launcher.API", "BF1Launcher.API\BF1Launcher.API.csproj", "{56900419-950C-4424-A70D-F06480F5EF94}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,9 @@ Global
 		{6F3E85EA-272A-4284-A7C6-435D52B17999}.Debug|x64.Build.0 = Debug|x64
 		{6F3E85EA-272A-4284-A7C6-435D52B17999}.Release|x64.ActiveCfg = Release|x64
 		{6F3E85EA-272A-4284-A7C6-435D52B17999}.Release|x64.Build.0 = Release|x64
+		{56900419-950C-4424-A70D-F06480F5EF94}.Debug|x64.ActiveCfg = Debug|x64
+		{56900419-950C-4424-A70D-F06480F5EF94}.Debug|x64.Build.0 = Debug|x64
+		{56900419-950C-4424-A70D-F06480F5EF94}.Release|x64.ActiveCfg = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

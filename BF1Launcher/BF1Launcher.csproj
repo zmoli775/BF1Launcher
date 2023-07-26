@@ -33,6 +33,7 @@
     </ItemGroup>
 
     <ItemGroup>
+        <ProjectReference Include="..\BF1Launcher.API\BF1Launcher.API.csproj" />
         <ProjectReference Include="..\BF1Launcher.UI\BF1Launcher.UI.csproj" />
     </ItemGroup>
 
@@ -42,7 +43,7 @@
         <Resource Include="Assets\Images\BGLoop\MP_Ridge_BGLoop.jpg" />
         <Resource Include="Assets\Images\icons8-folder-48.png" />
         <Resource Include="Assets\Images\icons8-hdd-48.png" />
-        <Resource Include="Assets\Images\logo_pc-795c9952.png" />
+        <Resource Include="Assets\Images\logo-pc-bf1.png" />
         <Resource Include="Assets\Images\origin_icon.png" />
     </ItemGroup>
 
@@ -79,6 +80,9 @@
         </None>
         <None Update="AppData\Tools\EA_Game_RegFix.exe">
             <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+        <None Update="使用说明.txt">
+          <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
         </None>
     </ItemGroup>
 
