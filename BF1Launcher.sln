@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BF1Launcher", "BF1Launcher\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BF1Launcher.UI", "BF1Launcher.UI\BF1Launcher.UI.csproj", "{6F3E85EA-272A-4284-A7C6-435D52B17999}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BF1Launcher.API", "BF1Launcher.API\BF1Launcher.API.csproj", "{56900419-950C-4424-A70D-F06480F5EF94}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BF1Launcher.API", "BF1Launcher.API\BF1Launcher.API.csproj", "{56900419-950C-4424-A70D-F06480F5EF94}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "解决方案项", "解决方案项", "{4F520AD1-2A93-4B68-98C3-D359E2C63846}"
 	ProjectSection(SolutionItems) = preProject
@@ -32,6 +32,7 @@ Global
 		{56900419-950C-4424-A70D-F06480F5EF94}.Debug|x64.ActiveCfg = Debug|x64
 		{56900419-950C-4424-A70D-F06480F5EF94}.Debug|x64.Build.0 = Debug|x64
 		{56900419-950C-4424-A70D-F06480F5EF94}.Release|x64.ActiveCfg = Release|x64
+		{56900419-950C-4424-A70D-F06480F5EF94}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

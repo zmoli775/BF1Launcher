@@ -17,16 +17,12 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <None Remove="Fonts\AlibabaPuHuiTi-3-55-Regular.ttf" />
-    </ItemGroup>
-
-    <ItemGroup>
         <Folder Include="Controls\" />
         <Folder Include="Converters\" />
     </ItemGroup>
 
     <ItemGroup>
-      <Resource Include="Fonts\AlibabaPuHuiTi-3-55-Regular.ttf" />
+        <Resource Include="Fonts\AlibabaPuHuiTi-3-55-Regular.ttf" />
     </ItemGroup>
 
 </Project>
