@@ -8,4 +8,4 @@ https://www.123pan.com/s/QEorVv-wILv3.html
 
 ## 预览
 
-![Snipaste_2023-05-06_07-56-07](https://user-images.githubusercontent.com/28080853/236586788-83d8ca5b-6361-4c36-a615-96c70a1b9a16.png)
+![image](https://github.com/CrazyZhang666/BF1Launcher/assets/28080853/91cad692-3918-4d1c-a969-93d26afe6ff6)
