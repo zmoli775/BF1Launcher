@@ -89,4 +89,18 @@ public static class ProcessHelper
             MsgBoxHelper.Error(ex.Message);
         }
     }
+
+    /// <summary>
+    /// 根据名字关闭指定程序
+    /// </summary>
+    /// <param name="processName">程序名字，不需要加.exe</param>
+    public static void CloseProcess(string processName)
+    {
+        var appProcess = Process.GetProcesses();
+        foreach (var targetPro in appProcess)
+        {
+            if (targetPro.ProcessName.Equals(processName))
+                targetPro.Kill();
+        }
+    }
 }

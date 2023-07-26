@@ -46,7 +46,7 @@ public partial class JoinView : UserControl
         Button_SearchServer.IsEnabled = true;
     }
 
-    private void ListBox_Servers_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+    private async void ListBox_Servers_MouseDoubleClick(object sender, MouseButtonEventArgs e)
     {
         var index = ListBox_Servers.SelectedIndex;
         if (index == -1)
@@ -69,6 +69,10 @@ public partial class JoinView : UserControl
             MsgBoxHelper.Warning("缺少战地1免Origin补丁，请先使用战地1免Origin补丁");
             return;
         }
+
+        ProcessHelper.CloseProcess("bf1");
+
+        await Task.Delay(1000);
 
         var gameId = ServersItems[index].gameId;
         var args = $"-Client.SkipFastLevelLoad true -Online.EnableSnowroller true -VeniceOnline.EnableSnowroller true -requestState State_ConnectToGameId -gameId \"{gameId}\" -gameMode \"MP\" -role \"soldier\" -asSpectator \"false\" -parentSessinId -joinWithParty \"false\"";
